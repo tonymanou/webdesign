@@ -1,14 +1,22 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <!--h3 class="text-muted">webdesign</h3>
-      <ul class="nav nav-pills">
-        <li class="active"><a ng-href="#/fr">Home</a></li>
-        <li><a ng-href="#/en">About</a></li>
-      </ul-->
-      <form class="navbar-search pull-right ng-pristine ng-valid" action="#" method="GET">
-        <input class="search-query" type="text" placeholder="Search" name="as_q"/>
-      </form>
+      <div class="col-sm-8 left-table">
+        <div class="col brand">
+          <a href="#/{{lang}}">
+            <img src="images/logo.png" alt="WebDesign"/>
+          </a>
+        </div>
+        <div class="col navigation">
+          <ul class="nav nav-pills">
+            <li class="active"><a ng-href="#/fr">Home</a></li>
+            <li><a ng-href="#/en">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 navbar-search">
+        <input class="search-query pull-right" type="text" placeholder="{{search_text}}" ng-model="search_zone" />
+      </div>
     </div>
   </div>
 </div>

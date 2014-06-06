@@ -6,14 +6,21 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-$bg_body: #93B8CC;
-$bg_header: rgba(36, 89, 117, 0.9);
-$border_header: #4D8DB0;
-$bg_footer: #477EA3;
-$border_footer: #396582;
+@import '../styles/include.scss';
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
 
 body {
-    background: $bg_body;
+    @include my-gradient(#fff, $bg_body);
+}
+
+.main-page {
+    position:relative;
+    min-height: 100%;
 }
 
 .browsehappy {
@@ -40,21 +47,46 @@ body {
     border-bottom: 1px solid $border_header;
     border-radius: 0;
     margin: 0;
-    min-height: 42px;
+    min-height: $navbar-height;
 }
 
-.brand {
-    margin-top: 6px;
-    margin-bottom: 6px;
+.navbar {
+    .left-table {
+        clear: left;
+        margin: 0;
+        padding: 0;
+    }
 
-    img {
-        height: 28px;
+    .left-table > .col {
+        display: inline;
+        float: left;
+        padding-right: 6px;
+    }
+
+    .brand {
+        padding-left: 0;
+        line-height: $navbar-height;
+
+        a {
+            color: #FFF;
+            font-size: 24px;
+        }
+    }
+
+    .navigation {
+        height: $navbar-height;
+    }
+
+    .navigation .nav {
+        padding-top: 2px;
     }
 }
 
 .navbar-search {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 0;
+    height: 28px;
 
     .search-query {
         position: relative;
@@ -82,12 +114,16 @@ body {
 }
 
 .main-content {
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: $footer-height - 10px;
 }
 
 .footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: $footer-height;
     background-color: $bg_footer;
     color: #DDD;
     border-top: 1px solid $border_footer;
@@ -111,6 +147,6 @@ body {
     }
 
     .main-content {
-        margin-top: 57px;
+        margin-top: $navbar-height + 5;
     }
 }
