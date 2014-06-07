@@ -65,7 +65,7 @@ body {
 
     .brand {
         padding-left: 0;
-        line-height: $navbar-height;
+        line-height: $navbar-height - 3px;
 
         a {
             color: #FFF;
@@ -73,21 +73,16 @@ body {
         }
     }
 
-    .navigation {
-        height: $navbar-height;
-    }
-
     .navigation .nav {
-        padding-top: 2px;
+        padding-top: 1px;
     }
 }
 
 .navbar-search {
-    padding-top: 6px;
-    padding-bottom: 6px;
     padding-right: 0;
-    height: 28px;
+}
 
+.navbar-search {
     .search-query {
         position: relative;
         vertical-align: middle;
@@ -103,6 +98,8 @@ body {
         border-radius: 14px;
         width: 210px;
         height: 28px;
+        margin-top: 6px;
+        margin-bottom: 7px;
     }
 
     .search-query:focus {
@@ -137,6 +134,14 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .navbar-search {
+        .search-query {
+            margin-top: 7px;
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
     .navbar {
         position: fixed;
@@ -147,6 +152,6 @@ body {
     }
 
     .main-content {
-        margin-top: $navbar-height + 5;
+        margin-top: $navbar-height + 5px;
     }
 }
