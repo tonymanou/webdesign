@@ -1,10 +1,29 @@
 'use strict';
 
 angular.module('webdesignApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrlFr', function ($scope, $http) {
+    $http.get(
+        'data/lang.fr.json'
+      ).success(function(data) {
+        $scope.lang = data;
+      });
+    $http.get(
+        'data/resume.fr.json'
+      ).success(function(data) {
+        $scope.resume = data;
+      });
+  });
+
+angular.module('webdesignApp')
+  .controller('MainCtrlEn', function ($scope, $http) {
+    $http.get(
+        'data/lang.en.json'
+      ).success(function(data) {
+        $scope.lang = data;
+      });
+    $http.get(
+        'data/resume.en.json'
+      ).success(function(data) {
+        $scope.resume = data;
+      });
   });
