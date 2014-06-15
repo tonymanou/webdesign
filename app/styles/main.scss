@@ -14,11 +14,8 @@ html, body {
     height:100%;
 }
 
-body {
-    @include my-gradient(#fff, $bg_body);
-}
-
 .main-page {
+    @include my-gradient($bg_body, $bg_bottom_body);
     position:relative;
     min-height: 100%;
 }
@@ -152,6 +149,6 @@ body {
     }
 
     .main-content {
-        margin-top: $navbar-height + 5px;
+        padding-top: $navbar-height + 20px;
     }
 }
