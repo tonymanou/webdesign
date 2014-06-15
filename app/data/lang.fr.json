@@ -5,6 +5,19 @@
     "search": "Recherche",
     "back_to_top": "Retour en haut",
     "by": "par",
+    "highlight": "Résumé",
+    "experience": "Expérience",
+    "education": "Éducation",
     "about_title": "Projet web-design",
-    "about_text": "Projet Yeoman Angular"
+    "about_text": [
+    {
+        "text": "Projet de site réactif avec AngularJS, Bootstrap et SASS."
+    },
+    {
+        "text": "Il s'agissait de créer un site affichant de manière agréable le CV d'une personne."
+    },
+    {
+        "text": "Note : les données dans le CV sont fictives."
+    }
+    ]
 }

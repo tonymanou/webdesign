@@ -5,24 +5,30 @@
     <div class="col-sm-4">
       <div class="well">
         <p class="lead">
-          <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-          {{lang.dummy}}
+          <img id="profile-picture" src="images/profile.png" alt="[Photo]">
         </p>
-        <p><a class="btn btn-lg btn-success" ng-href="#">{{lang.splendid}}</span></a>
-        <span class="glyphicon glyphicon-ok"></p>
+        <div class="row names">
+          <div class="col-sm-6">{{resume.details.name}}</div>
+          <div class="col-sm-6">{{resume.details.firstName}}</div>
+        </div>
       </div>
     </div>
     <div class="col-sm-8">
-      <div class="well" ng-repeat="elem in resume.resume | filter:vars.searchText">
-        {{elem}}
-      </div>
+      <h2 class="small-title">{{lang.highlight}}</h2>
+      <div ng-repeat="data in resume.resume | filter:vars.searchText" resume-item />
     </div>
   </div>
-  <div resume-item/>
-  <div resume-item/>
-  <div resume-item/>
-  <div resume-item/>
-  <div resume-item/>
-  <div resume-item/>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="small-title">{{lang.experience}}</h2>
+      <div ng-repeat="data in resume.experience | filter:vars.searchText" experience-item />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="small-title">{{lang.education}}</h2>
+      <div ng-repeat="data in resume.education | filter:vars.searchText" education-item />
+    </div>
+  </div>
 </div>
 <footer class="footer" ng-include="'views/footer.html'"></footer>

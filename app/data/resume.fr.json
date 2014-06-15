@@ -1,25 +1,66 @@
 {
     "details":{
         "name":"MANN",
-        "first-name":"Antoine",
-        "test":"test"
+        "firstName":"Antoine"
     },
     "resume":[
     {
-        "title":"Test",
-        "content":"Ablerti"
+        "title":"Programmation",
+        "list":[
+        {
+            "content": "PHP, CSS, HTML, Javascript"
+        },
+        {
+            "content": "Java (Desktop, Android)"
+        },
+        {
+            "content": "C, C++"
+        }
+        ]
     },
     {
-        "title":"Test",
-        "content":"Message de test"
+        "title":"Langues",
+        "content":"Français, Anglais, Espagnol"
+    }
+    ],
+    "experience":[
+    {
+        "what": "Administrateur réseau",
+        "where": "GigaNet S.A. (France)",
+        "when": "Janvier 2013 - maintenant",
+        "time": "",
+        "details": "Administration d'un datacenter pour deux clients importants."
     },
     {
-        "title":"Test",
-        "content":"Tèlurat"
+        "what": "Stage élève ingénieur",
+        "where": "ElectroTech (Pays-Bas)",
+        "when": "Juillet 2011 - Décembre 2011",
+        "time": "6 mois",
+        "details": "Stage de programmation."
     },
     {
-        "title":"Test",
-        "content":"Mérido"
+        "what": "Stage ouvrier",
+        "where": "Airline 3000 (France)",
+        "when": "Jully 2009",
+        "time": "1 mois",
+        "details": "Réparation de systèmes embarqués d'avions."
+    }
+    ],
+    "education":[
+    {
+        "what": "EPF École d'ingénieurs",
+        "where": "Sceaux (France)",
+        "time": "2008 - 2013"
+    },
+    {
+        "what": "Lycée Alexandre Dumas",
+        "where": "Versailles (France)",
+        "time": "2005 - 2008"
+    },
+    {
+        "what": "Collège Fermat",
+        "where": "Versailles (France)",
+        "time": "2002 - 2005"
     }
     ]
 }

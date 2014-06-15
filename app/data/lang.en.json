@@ -5,6 +5,19 @@
     "search": "Search",
     "back_to_top": "Back to top",
     "by": "by",
+    "highlight": "Highlights",
+    "experience": "Experience",
+    "education": "Education",
     "about_title": "Web-design project",
-    "about_text": "Yeoman Angular project"
+    "about_text": [
+    {
+        "text": "School project to make a responsive website with AngularJS, Bootstrap and SASS."
+    },
+    {
+        "text": "The point of the project was to create a small website displaying a résumé responsively."
+    },
+    {
+        "text": "Disclaimer: résumé's data are fake."
+    }
+    ]
 }

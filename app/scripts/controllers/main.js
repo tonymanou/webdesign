@@ -10,7 +10,8 @@ angular.module('webdesignApp')
     $scope.styles = {
       'homeActive': 'active',
       'aboutActive': '',
-      'goToTopVisible': ''
+      'goToTopVisible': '',
+      'searchVisible': ''
     };
     $scope.backToTop = function () {
       $location.hash('the-top');
@@ -42,7 +43,8 @@ angular.module('webdesignApp')
     $scope.styles = {
       'homeActive': 'active',
       'aboutActive': '',
-      'goToTopVisible': ''
+      'goToTopVisible': '',
+      'searchVisible': ''
     };
     $scope.backToTop = function () {
       $location.hash('the-top');

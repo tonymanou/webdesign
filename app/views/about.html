@@ -2,7 +2,7 @@
 <div class="container main-content">
   <div id="about-box">
     <h2>{{lang.about_title}}</h2>
-    <p class="lead">{{lang.about_text}}</p>
+    <h4 ng-repeat="data in lang.about_text">{{data.text}}</h4>
     <p class="author">Tonymanou</p>
   </div>
 </div>

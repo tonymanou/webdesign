@@ -1,8 +1,9 @@
-<div class="jumbotron">
-  <h1>{{lang.allo}}</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    {{lang.dummy}}
+<div class="well">
+  <h4 class="lead">{{data.title}}</h4>
+  <p class="details">
+    {{data.content}}
+    <ul>
+        <li ng-repeat="elem in data.list">{{elem.content}}</li>
+    </ul>
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">{{lang.splendid}}<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>

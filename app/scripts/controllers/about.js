@@ -9,7 +9,8 @@ angular.module('webdesignApp')
     $scope.styles = {
       'homeActive': '',
       'aboutActive': 'active',
-      'goToTopVisible': 'ng-hide'
+      'goToTopVisible': 'ng-hide',
+      'searchVisible': 'ng-hide'
     };
 
     // Load language data
@@ -29,7 +30,8 @@ angular.module('webdesignApp')
     $scope.styles = {
       'homeActive': '',
       'aboutActive': 'active',
-      'goToTopVisible': 'ng-hide'
+      'goToTopVisible': 'ng-hide',
+      'searchVisible': 'ng-hide'
     };
 
     // Load language data

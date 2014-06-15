@@ -1,25 +1,66 @@
 {
     "details":{
         "name":"MANN",
-        "first-name":"Antoine",
-        "test":"test"
+        "firstName":"Antoine"
     },
     "resume":[
     {
-        "title":"Test",
-        "content":"Test message"
+        "title":"Programmation",
+        "list":[
+        {
+            "content": "PHP, CSS, HTML, Javascript"
+        },
+        {
+            "content": "Java (Desktop, Android)"
+        },
+        {
+            "content": "C, C++"
+        }
+        ]
     },
     {
-        "title":"Test",
-        "content":"Test message"
+        "title":"Languages",
+        "content":"French, English, Spanish"
+    }
+    ],
+    "experience":[
+    {
+        "what": "Network administrator",
+        "where": "GigaNet S.A. (France)",
+        "when": "January 2013 - now",
+        "time": "",
+        "details": "Administrating a datacenter for two big clients."
     },
     {
-        "title":"Test",
-        "content":"Test message"
+        "what": "Internship",
+        "where": "ElectroTech (Netherlands)",
+        "when": "Jully 2011 - December 2011",
+        "time": "6 months",
+        "details": "Programming internship."
     },
     {
-        "title":"Test",
-        "content":"Test message"
+        "what": "Internship",
+        "where": "Airline 3000 (France)",
+        "when": "Jully 2009",
+        "time": "1 months",
+        "details": "Reparing embedded systems in planes."
+    }
+    ],
+    "education":[
+    {
+        "what": "EPF Engineering school",
+        "where": "Sceaux (France)",
+        "time": "2008 - 2013"
+    },
+    {
+        "what": "Alexandre Dumas High school",
+        "where": "Versailles (France)",
+        "time": "2005 - 2008"
+    },
+    {
+        "what": "Fermat Middle school",
+        "where": "Versailles (France)",
+        "time": "2002 - 2005"
     }
     ]
 }
