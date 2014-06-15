@@ -1,0 +1,25 @@
+{
+    "details":{
+        "name":"MANN",
+        "first-name":"Antoine",
+        "test":"test"
+    },
+    "resume":[
+    {
+        "title":"Test",
+        "content":"Ablerti"
+    },
+    {
+        "title":"Test",
+        "content":"Message de test"
+    },
+    {
+        "title":"Test",
+        "content":"Tèlurat"
+    },
+    {
+        "title":"Test",
+        "content":"Mérido"
+    }
+    ]
+}

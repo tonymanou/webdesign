@@ -1,0 +1,25 @@
+{
+    "details":{
+        "name":"MANN",
+        "first-name":"Antoine",
+        "test":"test"
+    },
+    "resume":[
+    {
+        "title":"Test",
+        "content":"Test message"
+    },
+    {
+        "title":"Test",
+        "content":"Test message"
+    },
+    {
+        "title":"Test",
+        "content":"Test message"
+    },
+    {
+        "title":"Test",
+        "content":"Test message"
+    }
+    ]
+}
