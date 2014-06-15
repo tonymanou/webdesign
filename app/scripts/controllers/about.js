@@ -2,9 +2,10 @@
 
 angular.module('webdesignApp')
   .controller('AboutCtrlFr', function ($scope, $http) {
-    $scope.nav = {
+    $scope.styles = {
       'homeActive': '',
-      'aboutActive': 'active'
+      'aboutActive': 'active',
+      'goToTopVisible': 'ng-hide'
     };
 
     // Load language data
@@ -17,9 +18,10 @@ angular.module('webdesignApp')
 
 angular.module('webdesignApp')
   .controller('AboutCtrlEn', function ($scope, $http) {
-    $scope.nav = {
+    $scope.styles = {
       'homeActive': '',
-      'aboutActive': 'active'
+      'aboutActive': 'active',
+      'goToTopVisible': 'ng-hide'
     };
 
     // Load language data

@@ -1,13 +1,20 @@
 'use strict';
 
 angular.module('webdesignApp')
-  .controller('MainCtrlFr', function ($scope, $http) {
+  .controller('MainCtrlFr', function ($scope, $http, $location, $anchorScroll) {
     $scope.search = {
       'text': null
     };
-    $scope.nav = {
+    $scope.styles = {
       'homeActive': 'active',
-      'aboutActive': ''
+      'aboutActive': '',
+      'goToTopVisible': ''
+    };
+    $scope.backToTop = function () {
+      //var old = $location.hash();
+      $location.hash('the-top');
+      $anchorScroll();
+      //$location.hash(old);
     };
 
     // Load language data
@@ -26,13 +33,20 @@ angular.module('webdesignApp')
   });
 
 angular.module('webdesignApp')
-  .controller('MainCtrlEn', function ($scope, $http) {
+  .controller('MainCtrlEn', function ($scope, $http, $location, $anchorScroll) {
     $scope.search = {
       'text': null
     };
-    $scope.nav = {
+    $scope.styles = {
       'homeActive': 'active',
-      'aboutActive': ''
+      'aboutActive': '',
+      'goToTopVisible': ''
+    };
+    $scope.backToTop = function () {
+      //var old = $location.hash();
+      $location.hash('the-top');
+      $anchorScroll();
+      //$location.hash(old);
     };
 
     // Load language data
