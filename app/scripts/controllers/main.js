@@ -17,7 +17,7 @@ angular.module('webdesignApp')
         $scope.lang = data;
       });
 
-    // Load resume data
+    // Load résumé data
     $http.get(
         'data/resume.fr.json'
       ).success(function(data) {
@@ -42,7 +42,7 @@ angular.module('webdesignApp')
         $scope.lang = data;
       });
 
-    // Load resume data
+    // Load résumé data
     $http.get(
         'data/resume.en.json'
       ).success(function(data) {

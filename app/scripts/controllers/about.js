@@ -7,6 +7,7 @@ angular.module('webdesignApp')
       'aboutActive': 'active'
     };
 
+    // Load language data
     $http.get(
         'data/lang.fr.json'
       ).success(function(data) {
@@ -21,6 +22,7 @@ angular.module('webdesignApp')
       'aboutActive': 'active'
     };
 
+    // Load language data
     $http.get(
         'data/lang.en.json'
       ).success(function(data) {
