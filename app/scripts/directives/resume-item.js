@@ -5,5 +5,5 @@ angular.module('webdesignApp')
     return {
       restrict: 'AEC',
       templateUrl: 'views/resume-item.html'
-    }
-});
+    };
+  });
