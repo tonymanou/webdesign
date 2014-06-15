@@ -2,6 +2,11 @@
 
 angular.module('webdesignApp')
   .controller('AboutCtrlFr', function ($scope, $http) {
+    $scope.nav = {
+      'homeActive': '',
+      'aboutActive': 'active'
+    };
+
     $http.get(
         'data/lang.fr.json'
       ).success(function(data) {
@@ -11,6 +16,11 @@ angular.module('webdesignApp')
 
 angular.module('webdesignApp')
   .controller('AboutCtrlEn', function ($scope, $http) {
+    $scope.nav = {
+      'homeActive': '',
+      'aboutActive': 'active'
+    };
+
     $http.get(
         'data/lang.en.json'
       ).success(function(data) {

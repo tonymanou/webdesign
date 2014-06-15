@@ -5,6 +5,10 @@ angular.module('webdesignApp')
     $scope.search = {
       'text': null
     };
+    $scope.nav = {
+      'homeActive': 'active',
+      'aboutActive': ''
+    };
 
     // Load language data
     $http.get(
@@ -25,6 +29,10 @@ angular.module('webdesignApp')
   .controller('MainCtrlEn', function ($scope, $http) {
     $scope.search = {
       'text': null
+    };
+    $scope.nav = {
+      'homeActive': 'active',
+      'aboutActive': ''
     };
 
     // Load language data
