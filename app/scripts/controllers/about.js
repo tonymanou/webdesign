@@ -2,6 +2,10 @@
 
 angular.module('webdesignApp')
   .controller('AboutCtrlFr', function ($scope, $http) {
+    $scope.vars = {
+      'currentPage': 'about',
+      'otherLang': 'en'
+    };
     $scope.styles = {
       'homeActive': '',
       'aboutActive': 'active',
@@ -18,6 +22,10 @@ angular.module('webdesignApp')
 
 angular.module('webdesignApp')
   .controller('AboutCtrlEn', function ($scope, $http) {
+    $scope.vars = {
+      'currentPage': 'about',
+      'otherLang': 'fr'
+    };
     $scope.styles = {
       'homeActive': '',
       'aboutActive': 'active',

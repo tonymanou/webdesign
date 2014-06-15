@@ -2,8 +2,10 @@
 
 angular.module('webdesignApp')
   .controller('MainCtrlFr', function ($scope, $http, $location, $anchorScroll) {
-    $scope.search = {
-      'text': null
+    $scope.vars = {
+      'searchText': null,
+      'currentPage': '',
+      'otherLang': 'en'
     };
     $scope.styles = {
       'homeActive': 'active',
@@ -11,10 +13,8 @@ angular.module('webdesignApp')
       'goToTopVisible': ''
     };
     $scope.backToTop = function () {
-      //var old = $location.hash();
       $location.hash('the-top');
       $anchorScroll();
-      //$location.hash(old);
     };
 
     // Load language data
@@ -34,8 +34,10 @@ angular.module('webdesignApp')
 
 angular.module('webdesignApp')
   .controller('MainCtrlEn', function ($scope, $http, $location, $anchorScroll) {
-    $scope.search = {
-      'text': null
+    $scope.vars = {
+      'searchText': null,
+      'currentPage': '',
+      'otherLang': 'fr'
     };
     $scope.styles = {
       'homeActive': 'active',
@@ -43,10 +45,8 @@ angular.module('webdesignApp')
       'goToTopVisible': ''
     };
     $scope.backToTop = function () {
-      //var old = $location.hash();
       $location.hash('the-top');
       $anchorScroll();
-      //$location.hash(old);
     };
 
     // Load language data

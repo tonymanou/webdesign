@@ -1,7 +1,7 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <div class="col-sm-8 left-table">
+      <div class="col-sm-7 left-table">
         <div class="col brand">
           <a href="#/{{lang.lang}}">
             <img src="images/logo.png" alt="WebDesign"/>
@@ -14,8 +14,13 @@
           </ul>
         </div>
       </div>
-      <div class="col-sm-4 navbar-search">
-        <input class="search-query pull-right" type="text" placeholder="{{lang.search}}" ng-model="search.text" />
+      <div class="col-sm-5 navbar-search">
+        <div class="pull-right">
+          <a href="#/{{vars.otherLang}}/{{vars.currentPage}}">
+            <img src="images/{{vars.otherLang}}.png" alt="{{vars.otherLang}}" />
+          </a>
+          <input class="search-query" type="text" placeholder="{{lang.search}}" ng-model="vars.searchText" />
+        </div>
       </div>
     </div>
   </div>
